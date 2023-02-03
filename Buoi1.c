@@ -1,3 +1,41 @@
+#include <stdio.h>
+
+int main(void) {
+//   Bài 1: Nhập vào 3 số nguyên a, b, c. 
+// In ra tổng, hiệu, tích, thương của 3 số.
+// Tính (a + b) * c và in ra màn hình.
+
+  int a;
+  int b; 
+  int c;
+  printf("Nhap vao so a: ");
+  scanf("%d",&a);
+  printf("Nhap vao so b: ");
+  scanf("%d",&b);
+  printf("Nhap vao so c: ");
+  scanf("%d",&c);
+  printf("so a la :%d",a);
+  printf("\nso b la :%d",b);
+  printf("\nso c la :%d",c);
+  printf("\n Tong 3 so a+b+c la : %d",a+b+c);
+  printf("\n hieu 2 so a , b la : %d", a-b);
+  // 4/2 =?2
+  // 5/2 = float
+  // 5/0 = ?
+  // in ra kết quả a/b
+  if(b!=0){
+    float thuong = (float) a/b;
+    printf("\n thuong 2 so a/b la : %f", thuong);
+  }else{
+    printf("\nb phai khac 0");
+  }
+  printf("\n (a+b)*c ket qua la : %d", (a+b)*c);
+  // a/b b=0;
+  // a=b => dấu = phép gán
+  // a==b => dấu == là phép so sánh
+  // a>b, a>= b , a<b, a<=b
+}
+
 //Bài 2: Nhap 2 canh a,b
 //Neu a = b => tính dien tích hình vuông và in ra màn hình
 //Neu a != b => tính dien tích hcn và in ra màn hình
